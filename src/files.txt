@@ -1,0 +1,12 @@
+src/app/api/ai/move/route.ts
+src/app/api/auth/login/route.ts
+src/app/api/auth/register/route.ts
+src/app/api/game/stats/route.ts
+src/app/auth/login/page.tsx
+src/app/auth/register/page.tsx
+src/app/auth/layout.tsx
+src/app/game/board/page.tsx
+src/app/game/layout.tsx
+src/app/game/page.tsx
+src/app/layout.tsx
+src/app/page.tsx
