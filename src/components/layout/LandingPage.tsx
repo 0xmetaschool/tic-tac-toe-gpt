@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Layers, Grid3X3, Shield } from 'lucide-react';
 import AnimatedBoard from './AnimatedBoard';
 import Footer from './Footer';
+import { useRouter } from 'next/navigation';
 
 /**
  * LandingPage Component
@@ -28,6 +29,7 @@ import Footer from './Footer';
  */
 
 const LandingPage = () => {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <main className="flex-grow">
@@ -41,7 +43,10 @@ const LandingPage = () => {
               level and board size for an engaging experience.
             </p>
             <div className="mt-10 flex justify-center">
-              <Button className="rounded-md bg-black px-6 py-2.5">
+              <Button 
+                className="rounded-md bg-black px-6 py-2.5"
+                onClick={() => router.push('/auth/login')}
+              >
                 Get Started
               </Button>
             </div>
